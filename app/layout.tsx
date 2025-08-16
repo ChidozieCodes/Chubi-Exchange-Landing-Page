@@ -22,11 +22,12 @@ export const metadata: Metadata = {
     title: "Chubi Crypto Merchant",
     description:
       "Trade crypto instantly with ease. Available worldwide. 100+ cryptocurrencies supported.",
-    url: "https://yourdomain.com",
+    url: "https://chubi-exchange.com",
     siteName: "Chubi Crypto Merchant",
     images: [
       {
-        url: "/images/hero/og-image.png",
+        // url: "/images/hero/og-image.png",
+        url: "/images/hero/hero page illustration.png",
         width: 1200,
         height: 630,
         alt: "Chubi Crypto Merchant Preview",
@@ -41,7 +42,8 @@ export const metadata: Metadata = {
     title: "Chubi Crypto Merchant",
     description:
       "Trade crypto instantly with ease. Available worldwide. 100+ cryptocurrencies supported.",
-    images: ["/images/hero/og-image.png"],
+    // images: ["/images/hero/og-image.png"],
+    images: ["/images/hero/hero page illustration.png"],
   },
 };
 
