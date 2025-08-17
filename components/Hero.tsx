@@ -26,9 +26,9 @@ export default function Hero() {
                         <Image
                           src="/images/hero/Apple Store download.png"
                           alt="App Store"
-                          width={120} // fallback width for SEO/layout
-                          height={50}
-                          className="w-full h-auto"
+                          width={180} // fallback width for SEO/layout
+                          height={60}
+                          className="w-[140px] sm:w-[160px] md:w-[180px] h-auto"
                         />
                     </a>
                   </li>
@@ -36,10 +36,10 @@ export default function Hero() {
                     <a href="">
                         <Image
                           src="/images/hero/Google Play Store download.png"
-                          alt="Chubi illustration"
-                          width={120} // fallback width for SEO/layout
-                          height={50}
-                          className="w-full h-auto"
+                          alt="Google Play"
+                          width={180} // fallback width for SEO/layout
+                          height={60}
+                          className="w-[140px] sm:w-[160px] md:w-[180px] h-auto"
                         />
                     </a>
                   </li>
