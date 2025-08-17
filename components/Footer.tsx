@@ -8,9 +8,11 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Column 1 */}
           <div>
-            <h3 className="text-xl font-bold mb-4">CHUBi</h3>
+            <h3 className="text-xl font-bold mb-4"  data-aos="fade-up">CHUBi</h3>
             <p className="text-gray-600 text-sm">Buy and Sell Crypto easily anytime, anywhere.</p>
-            <div className="flex space-x-3 mt-4">
+            <div className="flex space-x-3 mt-4" 
+            data-aos="fade-up"
+            data-aos-delay="200">
               {/* Social media icons would go here */}
               <div className="w-6 h-6 flex items-center justify-center bg-gray-300 rounded-full">
                  <Link href="/" className="">

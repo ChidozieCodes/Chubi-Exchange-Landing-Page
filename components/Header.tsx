@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="bg-muted py-6">
         <nav className="w-[90%] m-auto flex items-center justify-between text-white">
-            <Link href="/" className="">
+            <Link href="/" className="" data-aos="fade-right">
                 <Image
                   src="/images/header/chubi logo.png"
                   alt="Chubi Logo"
@@ -16,7 +16,7 @@ export default function Header() {
                   className="w-[80px] h-auto sm:w-[120px] md:w-[150px]"
                 />
             </Link>
-            <button className="py-2 px-4 md:p-4 bg-primary text-white font-bold rounded-2xl cursor-pointer">Download</button>
+            <button className="py-2 px-4 md:p-4 bg-primary text-white font-bold rounded-2xl cursor-pointer" data-aos="fade-left">Download</button>
         </nav>
     </header>
   );

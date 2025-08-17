@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AOSProvider from "@/components/AOSProvider"; // client wrapper
 import "./globals.css";
 
 // Load Poppins font
 const poppins = Poppins({
-  weight: ["400", "500", "600", "700"], // Adjust to the weights you need
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-poppins",
   display: "swap",
 });
-
 
 export const metadata: Metadata = {
   title: "Chubi Crypto Merchant - Trade Crypto Instantly with Ease",
@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     siteName: "Chubi Crypto Merchant",
     images: [
       {
-        // url: "/images/hero/og-image.png",
         url: "/images/hero/hero page illustration.png",
         width: 1200,
         height: 630,
@@ -42,24 +41,23 @@ export const metadata: Metadata = {
     title: "Chubi Crypto Merchant",
     description:
       "Trade crypto instantly with ease. Available worldwide. 100+ cryptocurrencies supported.",
-    // images: ["/images/hero/og-image.png"],
     images: ["/images/hero/hero page illustration.png"],
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.variable} antialiased`}
-      >
-      <Header />
-        {children}
-      <Footer />
+      <body className={`${poppins.variable} antialiased`}>
+        <AOSProvider>
+          <Header />
+          {children}
+          <Footer />
+        </AOSProvider>
       </body>
     </html>
   );

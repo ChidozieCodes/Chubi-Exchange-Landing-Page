@@ -11,16 +11,21 @@ export default function Hero() {
               alt="Chubi illustration"
               fill
               className="object-contain object-left-bottom hidden scale-90 md:block"
+              data-aos="fade-right"
           />
           </div>
           <div className="w-[100%] md:w-[70%] relative z-10 pb-10 md:pb-0">
-              <h1 className="font-bold text-4xl md:text-4xl xl:text-6xl text-white text-center md:text-left">
+              <h1 className="font-bold text-4xl md:text-4xl xl:text-6xl text-white text-center md:text-left" data-aos="fade-up">
                 Trade Crypto 
                 instantly 
                 with Ease
               </h1><br />
-              <p className="mt-4 text-white text-center md:text-left">Our App is available for download on:</p><br />
-              <ul className="flex flex-row justify-center md:justify-start">
+              <p className="mt-4 text-white text-center md:text-left" 
+              data-aos="fade-up"
+              data-aos-delay="200">Our App is available for download on:</p><br />
+              <ul className="flex flex-row justify-center md:justify-start" 
+              data-aos="zoom-in"
+              data-aos-delay="400">
                 <li className="me-2">
                     <a href="">
                         <Image
@@ -29,6 +34,7 @@ export default function Hero() {
                           width={180} // fallback width for SEO/layout
                           height={60}
                           className="w-[140px] sm:w-[160px] md:w-[180px] h-auto"
+                  
                         />
                     </a>
                   </li>
@@ -56,6 +62,7 @@ export default function Hero() {
               width={500} // fallback width for SEO/layout
               height={300}
               className="w-110 h-auto flex ms-auto"
+              data-aos="fade-left"
           />
         </div>
       </article>
